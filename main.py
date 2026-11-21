@@ -75,6 +75,7 @@ def updatefile():
 
 def deletefile():
     try:
+        readfileandfolder()
         name=input("Please tell the file you want to delete :- ")
         p=Path(name)
         if p.exists() and p.is_file():
